@@ -1,0 +1,24 @@
+{
+  "name": "svg-logo-maker",
+  "version": "1.0.0",
+  "description": "Module 10 Activity",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericklea/SVG-LOGO-MAKER.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericklea/SVG-LOGO-MAKER/issues"
+  },
+  "homepage": "https://github.com/ericklea/SVG-LOGO-MAKER#readme"
+}
