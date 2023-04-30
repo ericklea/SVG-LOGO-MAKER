@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ericklea/SVG-LOGO-MAKER/issues"
   },
-  "homepage": "https://github.com/ericklea/SVG-LOGO-MAKER#readme"
+  "homepage": "https://github.com/ericklea/SVG-LOGO-MAKER#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
