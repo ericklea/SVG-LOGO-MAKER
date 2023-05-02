@@ -1,4 +1,8 @@
 // Runs the application using imports from lib/
-const express = require('express');
-const app = express();
-const port = 3000;
+  //run inquirer prompt
+  const inquirer = require('inquirer');
+  const fs = require('fs');
+  const path = require('path');
+    const Manager = require('./lib/shapes.js');
+    
+
