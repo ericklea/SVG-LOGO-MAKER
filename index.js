@@ -28,17 +28,13 @@ const questions = [
     message: 'Please enter the shape you would like to use',
     },
 
+];
 
-
-
-
-
-
-
-
-
-
-    //function to initialize app
+//Function to write SVG file
+function writeSVGFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
+//Function to initialize app
 function init() {
     inquirer.prompt(questions).then((answers) => {
         console.log(answers);
