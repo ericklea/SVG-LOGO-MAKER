@@ -4,6 +4,7 @@
   const fs = require('fs');
   const path = require('path');
   const shapesJS = require('./lib/shapes.js');
+  
 
     // Array of questions for user input
 const questions = [
@@ -31,8 +32,8 @@ const questions = [
 ];
 
 //Function to write SVG file
-function writeSVGFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+function writeSVGFile(fileName) {
+    return fs.writeFileSync(path.join(process.cwd(),data, fileName));
 }
 //Function to initialize app
 function init() {
