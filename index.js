@@ -9,7 +9,7 @@
     // Array of questions for user input
 const questions = [
    { 
-    type: 'input',
+    type: 'list',
     name: 'shape',
     message: 'Please enter the shape you would like to use',
     choices: ['Triangle', 'Circle', 'Square'],
@@ -21,7 +21,7 @@ const questions = [
     },
     {
     type: 'input',
-    name: 'Character type',
+    name: 'text',
     message: 'Please enter the characters you would like to use, in order',
     },
     {
@@ -34,7 +34,7 @@ const questions = [
 
 //Function to write SVG file
 function writeSVGFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+    return fs.writeFileSync(path.join(process.cwd(),'assets', fileName), data);
 
 }
 //Function to initialize app
