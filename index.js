@@ -12,6 +12,7 @@ const questions = [
     type: 'input',
     name: 'shape',
     message: 'Please enter the shape you would like to use',
+    choices: ['Triangle', 'Circle', 'Square'],
     },
     {
     type: 'input',
@@ -32,8 +33,9 @@ const questions = [
 ];
 
 //Function to write SVG file
-function writeSVGFile(fileName) {
-    return fs.writeFileSync(path.join(process.cwd(),data, fileName));
+function writeSVGFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+
 }
 //Function to initialize app
 function init() {
