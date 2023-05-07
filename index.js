@@ -17,12 +17,17 @@ const questions = [
     {
     type: 'input',
     name: 'text',
-    message: 'Enter up to 3 characters:',
+    message: 'Pleae enter up to 3 characters:',
     },
     {
     type: 'input',
-    name: 'color',
-    message: 'Please enter the color you would like to use',
+    name: 'shape-color',
+    message: 'Please enter the color you would like your shape to be:',
+    },
+    {
+    type: 'input',
+    name: 'text-color',
+    message: 'Please enter the color you would like your text to be:',
     },
    
 ];
