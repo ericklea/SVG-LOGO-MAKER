@@ -5,6 +5,23 @@
   const path = require('path');
   const shapesJS = require('./lib/shapes.js');
   
+  class Shapes {
+      constructor(text, color) {
+          this.textElement = ''
+          this.colorElement = ''
+      }
+      render() {
+          return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+          <text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.color}">${this.text}</text>
+          </svg>`
+      }
+      setTextElement(text){
+            this.textElement = `<text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.color}">${this.text}</text>`
+      }
+      setShapeElement(shape){
+            this.shapeElement = shape.render()
+        }        
+    }
 
     // Array of questions for user input
 const questions = [
