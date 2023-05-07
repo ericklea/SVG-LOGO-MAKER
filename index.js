@@ -16,8 +16,8 @@ const questions = [
     },
     {
     type: 'input',
-    name: 'character length',
-    message: 'How many characters would you like your logo to contain?',
+    name: 'text',
+    message: 'Enter up to 3 characters:',
     },
     {
     type: 'input',
