@@ -21,11 +21,6 @@ const questions = [
     },
     {
     type: 'input',
-    name: 'text',
-    message: 'Please enter the characters you would like to use, in order',
-    },
-    {
-    type: 'input',
     name: 'color',
     message: 'Please enter the color you would like to use',
     },
