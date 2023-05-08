@@ -35,7 +35,10 @@ const questions = [
 
 //Function to write SVG file
 function writeSVGFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+    fs.writeFile(path.join('assets', fileName), data, (err) => {
+        if (err) throw err;
+        console.log('SVG file generated!');
+    });
 }
 
 //Function to initialize app
