@@ -34,15 +34,15 @@ const questions = [
 ];
 
 //Function to write SVG file
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+function writeSVGFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
 //Function to initialize app
 function init() {
-    inquirer.prompt(questions).then((inquirerResponses) => {
+    inquirer.prompt(questions).then((answers) => {
         console.log('Generating SVG file...');
-        writeToFile('logo.svg', generateSVG(inquirerResponses));
+        writeSVGFile('logo.svg', generateSVG({...answers}));
     })
 }
 // Function call to initialize app
