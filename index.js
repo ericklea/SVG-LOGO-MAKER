@@ -4,7 +4,7 @@
   const fs = require('fs');
   const path = require('path');
   const svggenerator = require('./lib/svggenerator.js');
-  const { Triangle, Circle, Square } = require('./lib/shapes.js');
+  const shapes.js = require('./lib/shapes.js');
 
     // Array of questions for user input
 const questions = [
