@@ -48,7 +48,7 @@ function writeSVGFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((answers) => {
         console.log('Generating SVG file...');
-        writeSVGFile('logo.svg', generateSVG({ ...answers }));
+        writeSVGFile('logo.svg', generateSVG(answers));
     })
 }
 // Function call to initialize app
