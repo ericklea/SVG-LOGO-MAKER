@@ -3,7 +3,7 @@
   const inquirer = require('inquirer');
   const path = require('path');
   const fs = require('fs');
-  const generateSVG = require('./lib/shapes');
+  const generateSVG = require('./lib/shapes.js');
 
  
 
