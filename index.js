@@ -1,10 +1,11 @@
 // Runs the application using imports from lib/
   //run inquirer prompt
   const inquirer = require('inquirer');
-  const fs = require('fs');
   const path = require('path');
-  const svggenerator = require('./lib/svggenerator.js');
-  const shapes.js = require('./lib/shapes.js');
+  const fs = require('fs');
+  const generateSVG = require('./lib/shapes');
+
+ 
 
     // Array of questions for user input
 const questions = [
@@ -33,15 +34,16 @@ const questions = [
 ];
 
 //Function to write SVG file
-function writeSVGFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(),'assets', fileName), data); 
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
 }
+
 //Function to initialize app
 function init() {
-    inquirer.prompt(questions).then((answers) => {
-        console.log(answers);
-        writeSVGFile('logo.svg', svggenerator({...answers}));
-    });
+    inquirer.prompt(questions).then((inquirerResponses) => {
+        console.log('Generating SVG file...');
+        writeToFile('logo.svg', generateSVG(inquirerResponses));
+    })
 }
 // Function call to initialize app
 init()
