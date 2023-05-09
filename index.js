@@ -16,12 +16,12 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'text-color',
+        name: 'textColor',
         message: 'Please enter the color you would like your text to be:',
     },
     {
         type: 'input',
-        name: 'shape-color',
+        name: 'shapeColor',
         message: 'Please enter a color keyword OR a hexadecimal number for your shape:',
     },
     {
@@ -48,6 +48,7 @@ function writeSVGFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((answers) => {
         console.log('Generating SVG file...');
+        console.log(answers);
         writeSVGFile('logo.svg', generateSVG(answers));
     })
 }
