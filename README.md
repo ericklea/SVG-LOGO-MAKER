@@ -7,6 +7,7 @@ To run this application, install VSCode, open an integrated terminal and run npm
 # Usage
 To use this application, open VSCODE, open an integrated terminal, then run npm i in the integrated terminal, then run index.js in the integrated terminal, then answer the prompted questions. After all questions are answered, navigate to the assets folder and click on the file logo.svg. A preivew of the logo.svg will populate in a tab. Additionally, you can  right click on the logo.svg file and select open with live server, and the logo.svg will populate in your browser.
 Please see video example:
+![alt text](img/my-image.png)
 
 
 # Credits
